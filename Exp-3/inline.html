@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline CSS with Pseudo-Classes</title>
+</head>
+<body>
+    <div style="
+        margin: 30px;
+        padding: 20px;
+        border: 3px solid #000;
+        border-radius: 10px;
+        background-color: #f4f4f4;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    ">
+        <h1 style="
+            margin: 20px 0;
+            padding: 10px;
+            font-family: 'Arial', sans-serif;
+            font-size: 2em;
+            text-decoration: underline;
+            color: #333;
+        ">Welcome to Inline CSS</h1>
+        <p style="
+            margin: 15px 25px;
+            padding: 10px;
+            font-size: 1.2em;
+            text-align: left;
+            color: #555;
+            line-height: 1.6;
+        ">This is an example of inline CSS with pseudo-classes.</p>
+        <a href="#" style="
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1em;
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #00796b;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        "::hover {
+            background-color: #004d40;
+            text-decoration: underline;
+        }
+        "::active {
+            background-color: #00332e;
+        }
+        "::visited {
+            color: #a0d3a0;
+        }
+        ">Click Me</a>
+    </div>
+</body>
+</html>
