@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom JS Alerts</title>
+</head>
+<body>
+    <h1>Custom JavaScript Alerts, Confirm, and Prompt</h1>
+    <button onclick="showAlert('This is a custom alert!')">Show Alert</button>
+    <button onclick="showConfirm('Are you sure you want to proceed?', handleConfirm)">Show Confirm</button>
+    <button onclick="showPrompt('Please enter your name:', handlePrompt)">Show Prompt</button>
+
+    <script src="alert.js"></script>
+    <script>
+        function handleConfirm(confirmed) {
+            if (confirmed) {
+                console.log('User confirmed');
+            } else {
+                console.log('User canceled');
+            }
+        }
+
+        function handlePrompt(result) {
+            console.log('User entered:', result);
+        }
+    </script>
+</body>
+</html>
