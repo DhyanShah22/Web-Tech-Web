@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Food Ordering Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Foodie's Delight</h1>
+        </header>
+
+        <section class="food-menu">
+            <div class="food-item" onclick="showDetails('pizza')">
+                <img src="pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>$12.99</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+            <div class="food-item" onclick="showDetails('burger')">
+                <img src="burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>$8.99</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+            
+            <div class="food-item" onclick="showDetails('sushi')">
+                <img src="sushi.jpg" alt="Sushi">
+                <h3>Sushi</h3>
+                <p>$15.99</p>
+                <button class="order-btn">Order Now</button>
+            </div>
+        </section>
+
+        <div id="foodDetails" class="food-details">
+            <!-- Dynamic content will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
