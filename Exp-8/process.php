@@ -1,6 +1,12 @@
 <?php
 // Start session at the beginning of the script
-session_start();
+
+// Set session timeout to 10 seconds
+ini_set('session.gc_maxlifetime', 10);  // Time for session data to remain valid (in seconds)
+ini_set('session.cookie_lifetime', 10); // Time for session cookie to expire in the browser (in seconds)
+
+session_start(); // Start or resume the session
+
 echo "<pre>";
 print_r($_SESSION);
 echo "</pre>";
