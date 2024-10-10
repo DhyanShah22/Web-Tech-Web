@@ -1,7 +1,6 @@
 function validateForm() {
     let valid = true;
 
-    // Name validation: Must contain only letters and not be empty
     const name = document.getElementById('name').value;
     const nameError = document.getElementById('nameError');
     const namePattern = /^[A-Za-z\s]+$/;
@@ -13,7 +12,6 @@ function validateForm() {
         nameError.style.display = 'none';
     }
 
-    // Email validation: Standard email format
     const email = document.getElementById('email').value;
     const emailError = document.getElementById('emailError');
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -25,7 +23,6 @@ function validateForm() {
         emailError.style.display = 'none';
     }
 
-    // Phone number validation: Only digits, length between 10 and 15
     const phone = document.getElementById('phone').value;
     const phoneError = document.getElementById('phoneError');
     const phonePattern = /^\d{10,15}$/;
@@ -37,7 +34,6 @@ function validateForm() {
         phoneError.style.display = 'none';
     }
 
-    // Password validation: Minimum 8 characters, with letters, numbers, and special characters
     const password = document.getElementById('password').value;
     const passwordError = document.getElementById('passwordError');
     const passwordPattern = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
@@ -49,7 +45,6 @@ function validateForm() {
         passwordError.style.display = 'none';
     }
 
-    // Confirm password validation: Must match password
     const confirmPassword = document.getElementById('confirm-password').value;
     const confirmPasswordError = document.getElementById('confirmPasswordError');
     if (password !== confirmPassword) {
@@ -60,7 +55,6 @@ function validateForm() {
         confirmPasswordError.style.display = 'none';
     }
 
-    // Address validation: Not empty
     const address = document.getElementById('address').value;
     const addressError = document.getElementById('addressError');
     if (!address) {

@@ -1,4 +1,10 @@
 <?php
+// Start session at the beginning of the script
+session_start();
+echo "<pre>";
+print_r($_SESSION);
+echo "</pre>";
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize inputs
     $name = htmlspecialchars(trim($_POST['name']));
@@ -31,9 +37,25 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($errors)) {
+        // Form submission success
         echo "<h3>Form submitted successfully!</h3>";
-        // Process form (e.g., save to database)
+
+        // Store data in session variables
+        $_SESSION['name'] = $name;
+        $_SESSION['email'] = $email;
+        $_SESSION['phone'] = $phone;
+
+        // Set a cookie for the name and email (expires in 1 hour)
+        setcookie("name", $name, time() + 3600, "/"); // 3600 = 1 hour
+        setcookie("email", $email, time() + 3600, "/");
+
+        echo "<p>Welcome, " . $_SESSION['name'] . "! We have saved your session and cookies.</p>";
+
+        // Redirect to another page (e.g., welcome.php)
+        // header("Location: welcome.php");
+        // exit;
     } else {
+        // Display errors
         foreach ($errors as $error) {
             echo "<p>Error: $error</p>";
         }
