@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Book Collection</h1>
+    <table id="book-table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Genre</th>
+                <th>Published</th>
+            </tr>
+        </thead>
+        <tbody id="book-list">
+        </tbody>
+    </table>
+
+    <script>
+        function loadXMLDoc(filename) {
+            let xhttp = new XMLHttpRequest();
+            xhttp.open("GET", filename, false);
+            xhttp.send();
+            return xhttp.responseXML;
+        }
+
+        function displayBooks() {
+            let xml = loadXMLDoc("data.xml");
+            let books = xml.getElementsByTagName("book");
+            let table = document.getElementById("book-list");
+
+            for (let i = 0; i < books.length; i++) {
+                let row = document.createElement("tr");
+
+                let title = books[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
+                let author = books[i].getElementsByTagName("author")[0].childNodes[0].nodeValue;
+                let genre = books[i].getElementsByTagName("genre")[0].childNodes[0].nodeValue;
+                let published = books[i].getElementsByTagName("published")[0].childNodes[0].nodeValue;
+
+                row.innerHTML = `<td>${title}</td><td>${author}</td><td>${genre}</td><td>${published}</td>`;
+                table.appendChild(row);
+            }
+        }
+
+        window.onload = displayBooks;
+    </script>
+</body>
+</html>

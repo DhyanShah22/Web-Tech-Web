@@ -1,0 +1,65 @@
+{
+    "books": [
+      {
+        "title": "The Catcher in the Rye",
+        "author": "J.D. Salinger",
+        "genre": "Fiction",
+        "published": "1951"
+      },
+      {
+        "title": "To Kill a Mockingbird",
+        "author": "Harper Lee",
+        "genre": "Fiction",
+        "published": "1960"
+      },
+      {
+        "title": "1984",
+        "author": "George Orwell",
+        "genre": "Dystopian",
+        "published": "1949"
+      },
+      {
+        "title": "Pride and Prejudice",
+        "author": "Jane Austen",
+        "genre": "Romance",
+        "published": "1813"
+      },
+      {
+        "title": "The Great Gatsby",
+        "author": "F. Scott Fitzgerald",
+        "genre": "Fiction",
+        "published": "1925"
+      },
+      {
+        "title": "Moby Dick",
+        "author": "Herman Melville",
+        "genre": "Adventure",
+        "published": "1851"
+      },
+      {
+        "title": "War and Peace",
+        "author": "Leo Tolstoy",
+        "genre": "Historical Fiction",
+        "published": "1869"
+      },
+      {
+        "title": "Ulysses",
+        "author": "James Joyce",
+        "genre": "Modernist",
+        "published": "1922"
+      },
+      {
+        "title": "The Hobbit",
+        "author": "J.R.R. Tolkien",
+        "genre": "Fantasy",
+        "published": "1937"
+      },
+      {
+        "title": "Harry Potter and the Sorcerer's Stone",
+        "author": "J.K. Rowling",
+        "genre": "Fantasy",
+        "published": "1997"
+      }
+    ]
+  }
+  

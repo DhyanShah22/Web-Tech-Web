@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+    <book>
+        <title>The Catcher in the Rye</title>
+        <author>J.D. Salinger</author>
+        <genre>Fiction</genre>
+        <published>1951</published>
+    </book>
+    <book>
+        <title>To Kill a Mockingbird</title>
+        <author>Harper Lee</author>
+        <genre>Fiction</genre>
+        <published>1960</published>
+    </book>
+    <book>
+        <title>1984</title>
+        <author>George Orwell</author>
+        <genre>Dystopian</genre>
+        <published>1949</published>
+    </book>
+    <book>
+        <title>Pride and Prejudice</title>
+        <author>Jane Austen</author>
+        <genre>Romance</genre>
+        <published>1813</published>
+    </book>
+    <book>
+        <title>The Great Gatsby</title>
+        <author>F. Scott Fitzgerald</author>
+        <genre>Fiction</genre>
+        <published>1925</published>
+    </book>
+    <book>
+        <title>Moby Dick</title>
+        <author>Herman Melville</author>
+        <genre>Adventure</genre>
+        <published>1851</published>
+    </book>
+    <book>
+        <title>War and Peace</title>
+        <author>Leo Tolstoy</author>
+        <genre>Historical Fiction</genre>
+        <published>1869</published>
+    </book>
+    <book>
+        <title>Ulysses</title>
+        <author>James Joyce</author>
+        <genre>Modernist</genre>
+        <published>1922</published>
+    </book>
+    <book>
+        <title>The Hobbit</title>
+        <author>J.R.R. Tolkien</author>
+        <genre>Fantasy</genre>
+        <published>1937</published>
+    </book>
+    <book>
+        <title>Harry Potter and the Sorcerer's Stone</title>
+        <author>J.K. Rowling</author>
+        <genre>Fantasy</genre>
+        <published>1997</published>
+    </book>
+</books>
